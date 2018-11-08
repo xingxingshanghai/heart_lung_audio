@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent_background">#FA8072</color>
+    <color name="cardio_bg_color">#FFFAF0</color>
+    <color name="cardio_color3">#00EE00</color>
+    <color name="white">#ffffff</color> <!--白色 -->
+    <color name="darkgray">#A9A9A9</color> <!--暗灰色 -->
+    <color name="black">#000000</color> <!--黑色 -->
+</resources>

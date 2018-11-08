@@ -1,0 +1,119 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:1-53:12
+MERGED from [com.android.support:percent:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-22.2.0.aar\de27ea02880c514f89327c5c0eba35dd\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.0.aar\88789f66962ff5972e3af86e26e72e8f\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:1-53:12
+	package
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:4:5-49
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:6:5-30
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:5:5-28
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:percent:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-22.2.0.aar\de27ea02880c514f89327c5c0eba35dd\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:percent:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-22.2.0.aar\de27ea02880c514f89327c5c0eba35dd\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.0.aar\88789f66962ff5972e3af86e26e72e8f\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.0.aar\88789f66962ff5972e3af86e26e72e8f\AndroidManifest.xml:20:5-43
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:10:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:11:22-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:15:22-78
+uses-feature#android.hardware.bluetooth_le
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:16:5-89
+	android:required
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:16:64-87
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:16:19-63
+application
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:17:5-51:19
+MERGED from [com.android.support:percent:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-22.2.0.aar\de27ea02880c514f89327c5c0eba35dd\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:percent:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\percent-22.2.0.aar\de27ea02880c514f89327c5c0eba35dd\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.0.aar\88789f66962ff5972e3af86e26e72e8f\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.0.aar\88789f66962ff5972e3af86e26e72e8f\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:19:9-41
+	android:icon
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:20:9-45
+	android:allowBackup
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:21:9-56
+activity#com.example.bluetooth.feiyinrecord.MainInterface
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:22:9-28:20
+	android:label
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:23:13-33
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:22:19-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:24:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:26:27-74
+activity#com.example.bluetooth.feiyinrecord.MainActivity
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:29:9-32:20
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:30:13-75
+activity#com.example.bluetooth.feiyinrecord.MainActivity_h
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:33:9-36:20
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:34:13-77
+activity#com.example.bluetooth.feiyinrecord.MusicListActivity
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:37:9-42:20
+	android:label
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:39:13-33
+	android:theme
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:38:13-47
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:40:13-80
+service#com.example.bluetooth.feiyinrecord.MusicServiceDemo
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:43:9-46:19
+	android:enabled
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:45:13-35
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:44:13-79
+service#com.example.bluetooth.feiyinrecord.BluetoothLeService
+ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:47:9-50:19
+	android:enabled
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:49:13-35
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\musicPlay\Bluetooth4_32\app\src\main\AndroidManifest.xml:48:13-81
