@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <!-- 波形实现区域 -->
     <LinearLayout
         android:id="@+id/left_temperature_curve"
         android:layout_width="match_parent"
         android:layout_height="145dp"
         android:orientation="horizontal" />
-
+    <!--进度条和音频播放区域-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -120,7 +121,7 @@
 
 
     </LinearLayout>
-
+    <!--蓝牙显示状态-->
     <LinearLayout
         android:layout_width="match_parent"
         android:gravity="center"
@@ -145,105 +146,56 @@
             android:textColor="@android:color/holo_red_light"
             android:textSize="12sp" />
 
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="  录制设备电量:  "-->
-            <!--android:layout_gravity="center"-->
-            <!--android:textSize="12sp" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  录制设备电量:  "
+            android:layout_gravity="center"
+            android:textSize="12sp" />
 
-        <!--<TextView-->
-            <!--android:id="@+id/devicebat"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:gravity="center"-->
-            <!--android:text="正在获取....."-->
-            <!--android:textColor="@android:color/holo_red_light"-->
-            <!--android:textSize="12sp" />-->
+        <TextView
+            android:id="@+id/devicebat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="正在获取....."
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp" />
     </LinearLayout>
+    <!--文件名选择区域-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DBDBDB"
         android:layout_marginTop="2dp"
+        android:background="#DBDBDB"
         android:orientation="vertical">
-        <FrameLayout
-            android:id="@+id/imagepos"
+
+        <ImageView
+            android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_alignParentEnd="true">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="59dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/reposition"
-                android:src="@drawable/renbk" />
-            <RadioGroup
-                android:id="@+id/position_rg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:orientation="vertical">
-                <RadioButton
-                    android:id="@+id/position_rb1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/pos1"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
-                <RadioButton
-                    android:id="@+id/position_rb2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginTop="-32dp"
-                    android:text="@string/pos2"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
-                <RadioButton
-                    android:id="@+id/position_rb3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginStart="4dp"
-                    android:text="@string/pos3"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
-                <RadioButton
-                    android:id="@+id/position_rb4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginTop="-32dp"
-                    android:text="@string/pos4"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
-            </RadioGroup>
-        </FrameLayout>
-
+            android:layout_alignBottom="@+id/checkButton9"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/renbk1" />
         <TextView
+            android:id="@+id/saveType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
+            android:layout_marginTop="2dp"
             android:text="@string/feiyinbaocun"
             android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="16sp" />
 
         <LinearLayout
+            android:id="@+id/sex_agetext"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_below="@+id/saveType"
             android:layout_marginTop="1dp"
-            android:layout_above="@+id/disse"
             android:orientation="horizontal">
 
             <TextView
@@ -269,7 +221,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="@string/nan"
-                    android:textColor="@android:color/background_light"
+                    android:textColor="@android:color/black"
                     android:textSize="12sp" />
 
                 <RadioButton
@@ -277,242 +229,255 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/nv"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="12sp" />
             </RadioGroup>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="2dp"
                 android:text="@string/age"
                 android:textColor="@android:color/background_dark"
                 android:textSize="12sp"
                 android:textStyle="bold" />
+
             <Spinner
                 android:id="@+id/spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="录制位置："
+                android:textColor="@android:color/background_dark"
                 android:textSize="12sp"
-                android:textAlignment="center" />
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="12sp" />
 
             <!--<TextView-->
-                <!--android:id="@+id/textView2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:layout_marginStart="210dp"-->
-                <!--android:text="@string/posname"-->
-                <!--android:textColor="@android:color/black"-->
-                <!--android:textSize="16sp"-->
-                <!--android:textStyle="bold"/>-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginStart="210dp"-->
+            <!--android:text="@string/posname"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"/>-->
         </LinearLayout>
 
-        <RelativeLayout
-            android:id="@+id/disse"
-            android:layout_width="match_parent"
+        <CheckBox
+            android:id="@+id/checkButton1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/otherdis"
-            android:orientation="horizontal">
+            android:layout_below="@+id/sex_agetext"
+            android:text="@string/item1"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:text="@string/item1"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sex_agetext"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@+id/checkButton1"
+            android:text="@string/item2"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_toEndOf="@+id/checkButton1"
-                android:text="@string/item2"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sex_agetext"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@id/checkButton2"
+            android:text="@string/item3"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_toEndOf="@id/checkButton2"
-                android:text="@string/item3"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sex_agetext"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@+id/checkButton3"
+            android:text="@string/item4"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_toEndOf="@+id/checkButton3"
-                android:text="@string/item4"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkButton1"
+            android:text="@string/item5"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/checkButton1"
-                android:text="@string/item5"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton2"
+            android:layout_below="@+id/checkButton2"
+            android:text="@string/item6"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton2"
-                android:layout_below="@+id/checkButton2"
-                android:text="@string/item6"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton3"
+            android:layout_below="@+id/checkButton3"
+            android:text="@string/item7"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton3"
-                android:layout_below="@+id/checkButton3"
-                android:text="@string/item7"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton4"
+            android:layout_below="@+id/checkButton4"
+            android:text="@string/item8"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton4"
-                android:layout_below="@+id/checkButton4"
-                android:text="@string/item8"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton5"
+            android:layout_below="@+id/checkButton5"
+            android:text="@string/item9"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton5"
-                android:layout_below="@+id/checkButton5"
-                android:text="@string/item9"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton6"
+            android:layout_below="@+id/checkButton6"
+            android:text="@string/item10"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton6"
-                android:layout_below="@+id/checkButton6"
-                android:text="@string/item10"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton7"
+            android:layout_below="@+id/checkButton7"
+            android:text="@string/item11"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton7"
-                android:layout_below="@+id/checkButton7"
-                android:text="@string/item11"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton8"
+            android:layout_below="@+id/checkButton8"
+            android:text="@string/item17"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton8"
-                android:layout_below="@+id/checkButton8"
-                android:text="@string/item17"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton9"
+            android:layout_below="@+id/checkButton9"
+            android:text="@string/item13"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton9"
-                android:layout_below="@+id/checkButton9"
-                android:text="@string/item13"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton10"
+            android:layout_below="@+id/checkButton10"
+            android:text="@string/item14"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton10"
-                android:layout_below="@+id/checkButton10"
-                android:text="@string/item14"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton11"
+            android:layout_below="@+id/checkButton11"
+            android:text="@string/item15"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton11"
-                android:layout_below="@+id/checkButton11"
-                android:text="@string/item15"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton12"
+            android:layout_below="@+id/checkButton12"
+            android:text="@string/item16"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton12"
-                android:layout_below="@+id/checkButton12"
-                android:text="@string/item16"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton13"
+            android:layout_below="@+id/checkButton13"
+            android:text="@string/item12"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton13"
-                android:layout_below="@+id/checkButton13"
-                android:text="@string/item12"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/checkButton18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkButton14"
+            android:layout_below="@+id/checkButton14"
+            android:text="@string/item18"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
-            <CheckBox
-                android:id="@+id/checkButton18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/checkButton14"
-                android:layout_below="@+id/checkButton14"
-                android:text="@string/item18"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
-            <Button
-                android:id="@+id/disfinish"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/fselect"
-                android:layout_alignStart="@+id/checkButton11"
-                android:layout_below="@+id/checkButton15"
-                android:textSize="12sp"
-                />
-        </RelativeLayout>
+        <Button
+            android:id="@+id/disfinish"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@+id/checkButton17"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/fselect"
+            android:textSize="12sp" />
+
         <EditText
             android:id="@+id/otherdis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/saveAudio"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:ems="30"
             android:hint="@string/otherTye"
             android:inputType="textPersonName"
-            android:layout_above="@+id/saveAudio"
             android:textColor="@color/white"
             android:textSize="12sp"
             android:visibility="visible" />
@@ -531,6 +496,4 @@
             android:textStyle="bold" />
 
     </RelativeLayout>
-
-
 </LinearLayout>
