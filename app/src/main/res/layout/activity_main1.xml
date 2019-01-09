@@ -3,17 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
         android:id="@+id/left_temperature_curve"
         android:layout_width="match_parent"
         android:layout_height="274dp"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#DBDBDB"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/musicinfo"
             android:layout_width="wrap_content"
@@ -22,6 +24,7 @@
             android:layout_marginTop="1dp"
             android:gravity="center"
             android:textSize="12sp" />
+
         <LinearLayout
             android:id="@+id/song_lyrics_progress"
             android:layout_width="match_parent"
@@ -56,6 +59,7 @@
                 android:layout_marginEnd="5dp"
                 android:text="@string/playerEnd" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/play_pre_next"
             android:layout_width="wrap_content"
@@ -101,6 +105,7 @@
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />
+
             <Button
                 android:id="@+id/clearMusic"
                 android:layout_width="106dp"
@@ -115,16 +120,18 @@
 
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/deviceState"
-
             android:layout_gravity="center"
+
+            android:text="@string/deviceState"
             android:textSize="14sp" />
 
         <TextView
@@ -137,31 +144,34 @@
 
             android:textColor="@android:color/holo_red_light"
             android:textSize="12sp" />
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginStart="5dp"-->
-            <!--android:text="  录制设备电量:  "-->
-            <!--android:layout_gravity="center"-->
-            <!--android:textSize="14sp" />-->
 
-        <!--<TextView-->
-            <!--android:id="@+id/devicebat"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:ems="8"-->
-            <!--android:gravity="center"-->
-            <!--android:text="正在获取....."-->
-            <!--android:textColor="@android:color/holo_red_light"-->
-            <!--android:textSize="12sp" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:text="  录制设备电量:  "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/devicebat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="8"
+            android:gravity="center"
+            android:text="正在获取....."
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DBDBDB"
         android:layout_marginTop="2dp"
+        android:background="#DBDBDB"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -170,8 +180,8 @@
             android:gravity="center"
             android:text="@string/feiyinbaocun"
             android:textColor="@color/white"
-            android:textSize="20sp"
-             />
+            android:textSize="20sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -190,10 +200,10 @@
                 android:textStyle="bold" />
 
             <RadioGroup
-                android:layout_width="wrap_content"
                 android:id="@+id/rg_sex"
-                android:layout_gravity="center"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -242,6 +252,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -252,8 +263,8 @@
             <FrameLayout
                 android:id="@+id/imagepos"
                 android:layout_width="wrap_content"
-                android:layout_marginStart="55dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
                 android:layout_toEndOf="@+id/checkButton16">
 
                 <ImageView
@@ -263,7 +274,6 @@
                     android:layout_gravity="center"
                     android:contentDescription="@string/reposition"
                     android:src="@drawable/renbk" />
-
 
 
                 <RadioGroup
@@ -542,11 +552,12 @@
                 android:id="@+id/disfinish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/checkButton18"
                 android:layout_alignStart="@+id/checkButton11"
+                android:layout_alignTop="@+id/checkButton18"
                 android:text="@string/fselect"
                 android:textSize="12sp" />
         </RelativeLayout>
+
         <EditText
             android:id="@+id/otherdis"
             android:layout_width="wrap_content"
@@ -559,6 +570,7 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:visibility="visible" />
+
         <Button
             android:id="@+id/saveAudio"
             android:layout_width="106dp"
